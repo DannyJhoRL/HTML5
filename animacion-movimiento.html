@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animación de Movimiento SVG</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        svg {
+            border: 2px solid #333;
+            background-color: #f0f0f0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Ejemplo de Animación de Movimiento</h1>
+    <p>Un rectángulo se mueve de izquierda a derecha de forma infinita.</p>
+    
+    <svg width="400" height="100">
+        
+        <rect x="10" y="25" width="50" height="50" fill="#4CAF50">
+            <animate 
+                attributeName="x" 
+                from="10" 
+                to="340" 
+                dur="4s" 
+                repeatCount="indefinite" />
+        </rect>
+    </svg>
+
+</body>
+</html>
