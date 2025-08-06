@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">s
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Ignite Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <header>
+            <img src="assets/logo.png" alt="Logo" class="logo-img">
+        </header>
+
+        <div class="hero">
+            <h1>Impulsa tu negocio hacia el futuro digital</h1>
+            <p>En Digital Ignite Agency convertimos tus ideas en experiencias online impactantes.</p>
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="50" cy="50" r="20" fill="#ff6600">
+                    <animate attributeName="r" values="20;25;20" dur="1.5s" repeatCount="indefinite" />
+                    <animate attributeName="fill" values="#ff6600;#3333ff;#ff6600" dur="3s" repeatCount="indefinite" />
+                </circle>
+            </svg>
+        </div>
+
+        <section>
+            <h2>¿Quiénes somos?</h2>
+            <ul>
+                <li>Diseño y desarrollo de sitios web responsivos</li>
+                <li>e-Commerce con pasarelas de pago integradas</li>
+                <li>Sistemas CRM y aplicaciones a medida</li>
+                <li>Estrategias de marketing digital y SEO</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Consultoría en transformación digital</li>
+                <li>Desarrollo de aplicaciones móviles</li>
+                <li>Gestión de redes sociales y campañas publicitarias</li>
+                <li>Optimización de rendimiento web</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Proyectos destacados</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Portal Inmobiliario</h3>
+                    <p>Mapa interactivo con búsqueda geolocalizada.</p>
+                </div>
+                <div class="project-card">
+                    <h3>e-Commerce Artesanal</h3>
+                    <p>Catálogo dinámico y gestión de inventario.</p>
+                </div>
+                <div class="project-card">
+                    <h3>CRM para Gimnasio</h3>
+                    <p>Control de accesos y membresías con FaceID.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Testimonios</h2>
+            <div class="testimonials">
+                <blockquote>
+                    "Digital Ignite Agency transformó nuestra presencia online. ¡Altamente recomendados!" - Cliente A
+                </blockquote>
+                <blockquote>
+                    "Gracias a su equipo, nuestras ventas en línea se duplicaron en solo 3 meses." - Cliente B
+                </blockquote>
+                <blockquote>
+                    "El diseño de nuestra nueva web es simplemente espectacular." - Cliente C
+                </blockquote>
+            </div>
+        </section>
+
+        <section>
+            <h2>Preguntas Frecuentes</h2>
+            <div class="faq">
+                <h3>¿Qué tipo de proyectos aceptan?</h3>
+                <p>Trabajamos con proyectos de todos los tamaños, desde pequeñas empresas hasta grandes corporaciones.
+                </p>
+
+                <h3>¿Cuánto tiempo toma desarrollar un sitio web?</h3>
+                <p>El tiempo depende de la complejidad del proyecto, pero generalmente entre 4 y 8 semanas.</p>
+
+                <h3>¿Ofrecen soporte después del lanzamiento?</h3>
+                <p>Sí, ofrecemos planes de soporte y mantenimiento adaptados a tus necesidades.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Equipo</h2>
+            <div class="team">
+                <div class="team-member">
+                    <h3>Sergio Lara</h3>
+                    <p>CEO y Fundador</p>
+                </div>
+                <div class="team-member">
+                    <h3>Andrea Venegas</h3>
+                    <p>Directora de Marketing</p>
+                </div>
+                <div class="team-member">
+                    <h3>Juan Pablo Rios</h3>
+                    <p>Desarrollador Senior</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Selecciona un Servicio</h2>
+            <div class="dropdown-container">
+                <p>Elige el servicio que te interesa:</p>
+                <div class="custom-dropdown">
+                    <input type="checkbox" id="dropdown-toggle" class="dropdown-toggle">
+                    <label for="dropdown-toggle" class="dropdown-label">-- Selecciona una opción --</label>
+                    <div class="dropdown-menu">
+                        <label class="dropdown-item" for="web-design">
+                            <span>Diseño Web</span>
+                        </label>
+                        <label class="dropdown-item" for="ecommerce">
+                            <span>E-Commerce</span>
+                        </label>
+                        <label class="dropdown-item" for="mobile-app">
+                            <span>Aplicaciones Móviles</span>
+                        </label>
+                        <label class="dropdown-item" for="seo">
+                            <span>SEO y Marketing Digital</span>
+                        </label>
+                        <label class="dropdown-item" for="crm">
+                            <span>Sistemas CRM</span>
+                        </label>
+                        <label class="dropdown-item" for="consultoria">
+                            <span>Consultoría Digital</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <!-- Radio buttons ocultos para controlar las descripciones -->
+                <input type="radio" id="web-design" name="service" value="web-design" style="display: none;">
+                <input type="radio" id="ecommerce" name="service" value="ecommerce" style="display: none;">
+                <input type="radio" id="mobile-app" name="service" value="mobile-app" style="display: none;">
+                <input type="radio" id="seo" name="service" value="seo" style="display: none;">
+                <input type="radio" id="crm" name="service" value="crm" style="display: none;">
+                <input type="radio" id="consultoria" name="service" value="consultoria" style="display: none;">
+                
+                <div class="service-descriptions">
+                    <div class="service-info" data-service="web-design">
+                        <p><strong>Diseño Web:</strong> Creamos sitios web modernos, responsivos y optimizados para todos los dispositivos. Incluye diseño UX/UI profesional.</p>
+                    </div>
+                    <div class="service-info" data-service="ecommerce">
+                        <p><strong>E-Commerce:</strong> Desarrollo de tiendas online completas con pasarelas de pago, gestión de inventario y panel administrativo.</p>
+                    </div>
+                    <div class="service-info" data-service="mobile-app">
+                        <p><strong>Aplicaciones Móviles:</strong> Aplicaciones móviles nativas e híbridas para iOS y Android con diseño intuitivo y funcionalidades avanzadas.</p>
+                    </div>
+                    <div class="service-info" data-service="seo">
+                        <p><strong>SEO y Marketing Digital:</strong> Estrategias de posicionamiento web, marketing de contenidos y campañas publicitarias para aumentar tu visibilidad online.</p>
+                    </div>
+                    <div class="service-info" data-service="crm">
+                        <p><strong>Sistemas CRM:</strong> Sistemas personalizados de gestión de clientes, automatización de procesos y análisis de datos empresariales.</p>
+                    </div>
+                    <div class="service-info" data-service="consultoria">
+                        <p><strong>Consultoría Digital:</strong> Asesoramiento especializado en transformación digital, auditorías tecnológicas y planificación estratégica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Contáctanos</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nombre" placeholder="Tu nombre" required>
+                <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                <textarea name="mensaje" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <footer>
+            <p>Síguenos en <a href="https://www.instagram.com/digitaligniteagency/" target="_blank"
+                    rel="noopener">Instagram</a></p>
+            <p>&copy; 2025 Digital Ignite Agency. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
