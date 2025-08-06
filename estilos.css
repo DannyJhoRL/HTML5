@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('fondo.jpg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.tarjeta-perfil {
+  background: rgba(255, 255, 255, 0.005);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  transition: box-shadow 0.3s ease;
+}
+
+.tarjeta-perfil:hover {
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 2.45);
+}
+
+.tarjeta-perfil h2,
+.tarjeta-perfil p,
+.tarjeta-perfil label,
+.tarjeta-perfil details p {
+  color: #fff;
+}
+
+.foto-perfil {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 15px;
+}
+
+.svg-container {
+  margin: 20px auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form button {
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+form button {
+  background-color: rgba(0, 123, 255, 0.6);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: rgba(0, 123, 255, 0.9);
+}
+
+details {
+  margin-top: 20px;
+  text-align: left;
+  cursor: pointer;
+}
+
+details summary {
+  font-weight: bold;
+  color: #fff;
+}
+
+details p {
+  margin-top: 10px;
+}
+
+.tarjeta-perfil a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+.tarjeta-perfil a:hover {
+  text-decoration: underline;
+}
+
+.tarjeta-perfil i {
+  margin-right: 6px;
+}

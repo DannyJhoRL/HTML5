@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Widget de Perfil - Gustavo Ugalde Rios</title>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+  <article class="tarjeta-perfil">
+
+    <img src="basket.jpg" alt="Foto de Gustavo Ugalde Rios" class="foto-perfil">
+
+    <h2>Gustavo Ugalde Rios</h2>
+    <p>Entusiasta de la vida</p>
+    <p>
+    <a href="https://www.instagram.com/rios_ug/?igshid=YmMyMTA2M2Y%3D" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    </p>
+
+
+    <div class="svg-container">
+      <svg width="120" height="120" viewBox="0 0 100 100">
+        <polygon points="50,15 61,39 88,39 66,58 74,85 50,70 26,85 34,58 12,39 39,39"
+          fill="red">
+          <animateTransform 
+            attributeName="transform"
+            type="rotate"
+            from="0 50 50"
+            to="360 50 50"
+            dur="6s"
+            repeatCount="indefinite"/>
+
+          <animate 
+            attributeName="fill"
+            values="red;orange;yellow;green;blue;indigo;violet;red"
+            dur="8s"
+            repeatCount="indefinite"/>
+        </polygon>
+      </svg>
+    </div>
+
+    <form>
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha">
+
+      <label for="nivel">Nivel de experiencia:</label>
+      <input type="range" id="nivel" name="nivel" min="0" max="10">
+      
+      <button type="submit">Enviar</button>
+    </form>
+
+    <details>
+      <summary>Biografía</summary>
+      <p>Soy un programador de 20 años, apasionado por los retos y líder por naturaleza. Busco oportunidades para aplicar mis habilidades en un entorno dinámico, contribuir a proyectos innovadores y continuar mi crecimiento profesional en el campo de la programación. </p>
+    </details>
+  </article>
+
+</body>
+</html>
