@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+  <article>
+    <!-- Imagen de perfil -->
+    <img class="imagen-perfil" src="foto liz.jpeg" alt="Foto de perfil" width="60" />
+
+    <h2>Lizbeth Castillo</h2>
+    <p>Desarrolladora de Software</p>
+
+    <!-- Animación SVG -->
+    <svg viewBox="0 0 40 40">
+      <circle cx="10" cy="10" r="15" fill="#6c63ff">
+        <animate 
+          attributeName="r" 
+          values="10;10;15" 
+          dur="2s" 
+          repeatCount="indefinite" />
+        <animate 
+          attributeName="fill" 
+          values="#6c63ff;#ff6c63;#6c63ff" 
+          dur="2s" 
+          repeatCount="indefinite" />
+      </circle>
+    </svg>
+
+    <!-- Formulario -->
+    <form>
+      <label for="fecha">Fecha de nacimiento:</label>
+      <input type="date" id="fecha" name="fecha" />
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" />
+
+      <label for="nivel">Nivel de experiencia:</label>
+      <input type="range" id="nivel" name="nivel" min="1" max="10" />
+    </form>
+
+    <!-- Sección desplegable -->
+    <details>
+      <summary>Biografía</summary>
+      <p>Apasionada por la tecnología, el diseño y el desarrollo de soluciones innovadoras. Siempre en búsqueda de nuevos retos y aprendizajes.</p>
+    </details>
+  </article>
+</body>
+</html>
