@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Receta de Pasta Casera</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fdf6ec;
+      color: #4e342e;
+      padding: 2rem;
+      margin: 2rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.6;
+    }
+
+    h1, h2 {
+      color: #5d4037;
+      text-align: center;
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    img {
+      width: 180px;
+      max-width: 90%;
+      margin: 20px auto;
+      display: block;
+      border: 5px solid #e0cfc2;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .svg-container {
+      display: flex;
+      justify-content: center;
+      margin: 30px 0;
+    }
+
+    .receta {
+      background-color: #f5e8dc;
+      padding: 25px;
+      border-radius: 12px;
+      border: 2px solid #d7ccc8;
+      box-shadow: 0 2px 8px rgba(160, 136, 127, 0.1);
+    }
+
+    details {
+      margin-bottom: 20px;
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 10px;
+      background-color: #e8d6c3;
+      border-radius: 8px;
+      border: 1px solid #d7ccc8;
+    }
+
+    ul, ol {
+      padding-left: 1.5rem;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+      color: #6d4c41;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Receta de Pasta Casera</h1>
+
+  <div class="image-container">
+    <img src="pasta ejercicio.jpg" alt="Pasta casera hecha a mano">
+  </div>
+
+  <div class="svg-container">
+    <!-- Corazón SVG con palpitación y cambio de color -->
+    <svg width="100" height="100" viewBox="0 0 100 100">
+      <path d="M50 80 L20 50 A15 15 0 0 1 50 30 A15 15 0 0 1 80 50 Z" fill="#f8bbd0">
+        <animate attributeName="fill" values="#f8bbd0;#c5e1a5;#b2ebf2;#f8bbd0" dur="5s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" attributeType="XML" type="scale"
+          values="1;1.1;1" dur="1s" repeatCount="indefinite" additive="sum"
+          begin="0s" />
+      </path>
+    </svg>
+  </div>
+
+  <div class="receta">
+    <details open>
+      <summary>🍝 Ingredientes</summary>
+      <ul>
+        <li>200g de harina de trigo</li>
+        <li>2 huevos</li>
+        <li>1 cucharada de aceite de oliva</li>
+        <li>Una pizca de sal</li>
+      </ul>
+    </details>
+
+    <details>
+      <summary>📝 Instrucciones</summary>
+      <ol>
+        <li>Forma un volcán con la harina sobre una superficie limpia.</li>
+        <li>Agrega los huevos al centro junto con el aceite y la sal.</li>
+        <li>Mezcla con un tenedor de adentro hacia afuera hasta integrar.</li>
+        <li>Amasa durante 10 minutos hasta obtener una masa suave.</li>
+        <li>Envuelve en film y deja reposar 30 minutos.</li>
+        <li>Estira la masa con rodillo o máquina, y corta en forma de fettuccine o tagliatelle.</li>
+        <li>Hierve en agua con sal durante 3-5 minutos. ¡Listo!</li>
+      </ol>
+    </details>
+  </div>
+
+  <a href="https://www.recetasgratis.net/receta-de-pasta-casera-65612.html" target="_blank">Ver más recetas deliciosas 🍝</a>
+</body>
+</html>
